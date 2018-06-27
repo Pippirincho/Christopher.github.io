@@ -2,6 +2,9 @@
   h1 { color: Yellow; }
   <p> { color: green; } 
   #cow { color: blue; }
+  #chicken { color: red; }
+  #pig { color: lime; }
+  #sheep { color: purple; }
   iframe { height: 140px; width: 140px; }
   body { background-color: pink; }
 </style>
