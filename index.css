@@ -10,4 +10,5 @@
   iframe { height: 644px; width: 431px; }
   body { background-color: gray; }
   .box { height: 150; border: 1px solid; }
+  t-image { position: relative top: -2px; }
 </style>
