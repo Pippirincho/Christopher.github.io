@@ -24,8 +24,19 @@
       <script>
         var x = 'X';
         var o = 'O';
+        var turn = 1;
         
-      
+        $(".box").click(function(){
+          var our_box = $("#"+this.id);
+          if(our_box.text() == ''){
+          var val = turn == 1 ? 'X' : 'O'
+          our_box.text(val);
+          turn = '!turn;
+          $("#turn").text((turn == 1 ? 'X' : 'O') + "'s Turn");
+         }
+       });  
+      }); 
+        
     </head>
 
     <body>
@@ -41,8 +52,6 @@
       <p id="sheep"> Now look at these sad puppers :( </p>
       <iframe src="https://s-media-cache-ak0.pinimg.com/564x/68/f6/65/68f66511fab7e6b88f4958cbf3199502.jpg"></iframe>
       <img src="http://buzzsharer.com/wp-content/uploads/2015/11/sad-yorkshire-terrier.jpg" height="300" width="300"> 
-      <IMG STYLE="position: absolute; TOP: 35px;"
-      <p id="dog"> Look at this good boy catching a ball! </p>
         <div class="row">
           <div class="col-md-4 box">One</div>
           <div class="col-md-4 box">Two</div>
@@ -54,7 +63,18 @@
           <div class="col-md-4 box">Two</div>
           <div class="col-md-4 box">Three</div>
         </div>
+        <div class="row">
+          <button class="col-md-4 box">button 1</button>
+          <button class="col-md-4 box">button 2</button>
+          <button class="col-md-4 box">button 1</button>
+          <button class="col-md-4 box">button 2</button>                                          
+          <button class="col-md-4 box">button 1</button>                                         
+          <button class="col-md-4 box">button 2</button>
+          <button class="col-md-4 box">button 1</button>
+          <button class="col-md-4 box">button 2</button>
+          <button class="col-md-4 box">button 1</button>                                           
       </div>
+                                                     
     </body>
     
   </html>
